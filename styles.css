@@ -31,22 +31,21 @@ body {
 }
 
 .header__img {
-    width: 200px;
+    width: 180px;
     margin-left: 10px;
-}
-
-.header__menu {
-    margin-right: 30px;
 }
 
 .header__menu:hover ul,.menu__list:hover {
     display: block;
 } 
 
+.menu__list--link:hover {
+    text-decoration: underline;
+}
+
 .header__menu--profile {
     display: flex;
-    margin-right: 25px;
-    width: 40px;
+    margin-right: 45px;
     font-size: 1.6rem;
     justify-content: center;
     align-items: center;
@@ -76,6 +75,37 @@ body {
     margin: 10px 0px;
 }
 
+.searcher {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searcher__title {
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #ffffff;
+}
+
+.searcher__input {
+    margin-top: 40px;
+    width: 60vw;
+    height: 40px;
+    padding: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    background-color: var(--opaque-purple);
+    outline: none;
+    color: #ffffff;
+}
+
+.searcher__input::placeholder {
+    color: #ffffff;
+}
 
 
 
