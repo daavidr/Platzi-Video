@@ -107,5 +107,45 @@ body {
     color: #ffffff;
 }
 
+.carousel {
+    width: 130%;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 65px;
+    padding-left: 30px;
+    position: relative;
+}
 
+.carousel_container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel__item {
+    background-color: aliceblue;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center;
+}
+
+.carousel__item:hover ~ .carousel__item {
+    transform: translate3d(75px, 0, 75px);
+}
+
+.carousel__container:hover, .carousel__item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    transform-origin: center;
+}
 
