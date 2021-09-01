@@ -122,8 +122,7 @@ body {
     padding-bottom: 10px;
 }
 
-.carousel__item {
-    background-color: aliceblue;
+.carousel-item {
     display: inline-block;
     margin-right: 10px;
     overflow: hidden;
@@ -133,19 +132,69 @@ body {
     cursor: pointer;
     transition: 450ms all;
     transform-origin: center;
+    position: relative;
 }
 
-.carousel__item:hover ~ .carousel__item {
-    transform: translate3d(75px, 0, 75px);
+.carousel-item:hover:first-of-type {
+    transform: translate3d(100px, 0 ,0);
 }
 
-.carousel__container:hover, .carousel__item {
+.carousel__item:hover, .carousel-item {
     opacity: 0.3;
+    transition: 450ms all;
 }
 
-.carousel__container:hover .carousel__item:hover {
+.carousel__container:hover .carousel-item:hover {
     transform: scale(1.5);
     opacity: 1;
     transform-origin: center;
 }
 
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%);
+    font-size: 1.0rem;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.carousel-item__details--container {
+    position: relative;
+    top: 170px;
+}
+
+.carousel-item__details--play-icon {
+    width: 25px;
+    margin-bottom: 3px;
+}
+
+.carousel-item__details--plus-icon {
+    width: 25px;
+    margin-bottom: 3px;
+}
+
+.carousel-item__details:hover {
+    opacity: 1;
+}
+
+.carousel-item__details--title {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #ffffff;
+}
+
+.carousel-item__details--subtitle {
+    font-size: 1.0rem;
+    color: #ffffff;
+}
