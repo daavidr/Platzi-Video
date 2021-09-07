@@ -1,145 +1,192 @@
 :root {
-    --intense-purple: #5E1DFC;
-    --purple: #8f57fd;
-    --opaque-purple: #AB88FF;
-    --greeen: #12C08B;
-    --highlight-yellow: #E6AF2E;
+  --intense-purple: #5E1DFC;
+  --purple: #8f57fd;
+  --opaque-purple: #AB88FF;
+  --greeen: #12C08B;
+  --highlight-yellow: #E6AF2E;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Mulish', sans-serif;
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
 }
 
 .header {
-    background-color: var(--greeen);
-    width: 100%;
-    height: 80px;
+  background-color: var(--greeen);
+  width: 100%;
+  height: 80px;
 }
 
 .header__img {
-    width: 180px;
-    margin-top: 20px;
-    margin-left: 10px;
+  width: 180px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
-
 .register {
-    background: linear-gradient(#12C08B, #5E1DFC);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 30px;
-    min-height: calc(100vh - 200px);
+  background: -webkit-gradient(linear, left top, left bottom, from(#12C08B), to(#5E1DFC));
+  background: linear-gradient(#12C08B, #5E1DFC);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
 }
 
 .register__container {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #fff;
-    border-radius: 40px;
-    color: #fff;
-    padding: 60px 68px 40px;
-    min-height: 585px;
-    width: 500px;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.65);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  padding: 60px 68px 40px;
+  min-height: 585px;
+  width: 500px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
 }
 
 .register__container--title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .register__container--form {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .register__container--form label {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
+}
+
+.input::-webkit-input-placeholder {
+  color: #fff;
+  font-family: 'Mulish', sans-serif;
+}
+
+.input:-ms-input-placeholder {
+  color: #fff;
+  font-family: 'Mulish', sans-serif;
+}
+
+.input::-ms-input-placeholder {
+  color: #fff;
+  font-family: 'Mulish', sans-serif;
 }
 
 .input::placeholder {
-    color: #fff;
-    font-family: 'Mulish', sans-serif;
+  color: #fff;
+  font-family: 'Mulish', sans-serif;
 }
 
 .input {
-    background-color: transparent;
-    border-left: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 2px solid #fff;
-    font-size: 1.4rem;
-    height: 50px;
-    margin-bottom: 20px;
-    padding: 0px 20px ;
-    outline: none;
-    color: #fff;
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #fff;
+  font-size: 1.4rem;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  color: #fff;
 }
 
 .button {
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color:#fff;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin: 15px 0 30px;
-    box-shadow: 0px 7px 10px -5px rgba(0,0,0,0.65);
-    transform: scale(1.0);
-    transition-duration: 450ms;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 15px 0 30px;
+  -webkit-box-shadow: 0px 7px 10px -5px rgba(0, 0, 0, 0.65);
+          box-shadow: 0px 7px 10px -5px rgba(0, 0, 0, 0.65);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 450ms;
+          transition-duration: 450ms;
 }
 
 .button:hover {
-    transform: scale(1.2);
-    transition: 450ms ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 450ms ease;
+  transition: 450ms ease;
 }
 
 .register__container--link {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
 }
 
 .register__container--link a {
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    margin-top: 15px;
-    letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+  letter-spacing: 1px;
 }
 
 .footer {
-    width: 100%;
-    height: 150px;
-    background-color: var(--intense-purple);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 150px;
+  background-color: var(--intense-purple);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin: 0 30px 0 15px;
-    cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 30px 0 15px;
+  cursor: pointer;
 }
 
 .footer a:first-child {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+/*# sourceMappingURL=regstyle.css.map */

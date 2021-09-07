@@ -1,32 +1,33 @@
+:root {
+  --intense-purple: #5E1DFC;
+  --purple: #8f57fd;
+  --opaque-purple: #AB88FF;
+  --greeen: #12C08B;
+  --highlight-yellow: #E6AF2E;
+}
+
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
-  background-color: #8f57fd;
+  background-color: var(--purple);
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100vw;
   height: 80px;
-  background-color: #8f57fd;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: var(--purple);
+  justify-content: space-between;
 }
 
 .header__img {
@@ -43,21 +44,12 @@ body {
 }
 
 .header__menu--profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 45px;
   font-size: 1.6rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header__menu--profile p {
@@ -85,19 +77,10 @@ body {
 
 .searcher {
   height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .searcher__title {
@@ -111,24 +94,12 @@ body {
   width: 60vw;
   height: 40px;
   padding: 20px;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.6rem;
   border: 2px solid #ffffff;
   border-radius: 50px;
-  background-color: #AB88FF;
+  background-color: var(--opaque-purple);
   outline: none;
-  color: #ffffff;
-}
-
-.searcher__input::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.searcher__input:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.searcher__input::-ms-input-placeholder {
   color: #ffffff;
 }
 
@@ -159,45 +130,36 @@ body {
   height: 250px;
   border-radius: 20px;
   cursor: pointer;
-  -webkit-transition: 450ms all;
   transition: 450ms all;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
   position: relative;
 }
 
 .carousel-item:hover:first-of-type {
-  -webkit-transform: translate3d(100px, 0, 0);
-          transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0);
 }
 
 .carousel__item:hover, .carousel-item {
   opacity: 0.3;
-  -webkit-transition: 450ms all;
   transition: 450ms all;
 }
 
 .carousel__container:hover .carousel-item:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   opacity: 1;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
 }
 
 .carousel-item__img {
   width: 200px;
   height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .carousel-item__details {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(60%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%);
-  font-size: 1.0rem;
+  font-size: 1rem;
   opacity: 0;
-  -webkit-transition: 450ms opacity;
   transition: 450ms opacity;
   padding: 10px;
   position: absolute;
@@ -233,7 +195,8 @@ body {
 }
 
 .carousel-item__details--subtitle {
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: #ffffff;
 }
-/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styl.map */
